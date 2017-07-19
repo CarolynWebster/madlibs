@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Yay! Let's play a game!</title>
+</head>
+<body>
+    <h1>Fill in the blanks below:</h1>
+    <form action="/madlib">
+        Noun:<input type="text" name="noun"><br/><br/>
+        Person:<input type="text" name="person"><br/><br/>
+        Adjective:<input type="text" name="adj"><br/><br/>
+        Choose a color from the list:
+        <select name="color">
+            {% for color in color_list %}
+                <option value="{{ color }}">{{ color }}</option>
+            {% endfor %}
+        </select>
+        <!-- <select name="color">
+            <option value="red">Red</option>
+            <option value=""></option> -->
+        <br/><br/>
+        <input type="submit">
+    </form>
+</body>
+</html>
