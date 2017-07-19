@@ -8,7 +8,12 @@
     <form action="/madlib">
         Noun:<input type="text" name="noun"><br/><br/>
         Person:<input type="text" name="person"><br/><br/>
-        Adjective:<input type="text" name="adj"><br/><br/>
+        Adjective:<br/>
+        Slimey: <input type="checkbox" name="adj" value="slimey">
+        Pretty: <input type="checkbox" name="adj" value="pretty">
+        Gregarious: <input type="checkbox" name="adj" value="gregarious">
+        Unreliable: <input type="checkbox" name="adj" value="unreliable">
+        <br/><br/>
         Choose a color from the list:
         <select name="color">
             {% for color in color_list %}
